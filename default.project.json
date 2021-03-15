@@ -1,0 +1,12 @@
+{
+  "name": "feather-roblox",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Common": {
+        "$path": "src/shared"
+      }
+    },
+  },
+}
