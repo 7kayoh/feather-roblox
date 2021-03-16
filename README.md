@@ -12,8 +12,6 @@ Heyo, I've made a plugin so you can insert the beautifully-crafted icons made by
 
 The plugin includes a search feature, which can be helpful if you want to find a specific icon without scrolling around.
 
-Though, no light theme support yet ;(
-
 <h2> Credits</h2>
 
 [https://feathericons.com/](https://feathericons.com/)
