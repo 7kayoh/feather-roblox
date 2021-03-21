@@ -12,8 +12,8 @@ local WidgetInfo = DockWidgetPluginGuiInfo.new(
 	200,
 	300
 )
-local Widget = plugin:CreateDockWidgetPluginGui("Feathers Preview", WidgetInfo)
-local Toolbar = plugin:CreateToolbar("Feather icons (Preview)")
+local Widget = plugin:CreateDockWidgetPluginGui("Feathers", WidgetInfo)
+local Toolbar = plugin:CreateToolbar("Feather icons")
 local Trigger = Toolbar:CreateButton("Toggle Window", "Toggles the icon picker window", "rbxassetid://6521417285")
 local matchObject = {}
 local UI
