@@ -46,6 +46,7 @@ local function applyTheme()
 end
 
 local function init()
+	local Query = 0
 	Warn, Success = script.Warn:Clone(), script.Success:Clone()
 	UI = script.Parent.UI:Clone()
 	Search = UI.Search.Container.TextBox
@@ -60,10 +61,12 @@ local function init()
 			
 			Icon.Trigger.MouseEnter:Connect(function()
 				Icon.Background.BackgroundColor3 = Stylesheet.PrimaryColor3
+				Widget.Title = "Feather icons picker — Selecting icon \"" .. v[2] .. "\""
 			end)
 			
 			Icon.Trigger.MouseLeave:Connect(function()
 				Icon.Background.BackgroundColor3 = Stylesheet[settings().Studio.Theme.Name].Accent
+				Widget.Title = "Feather icons picker"
 			end)
 
 			Icon.Trigger.MouseButton1Up:Connect(function()
@@ -86,8 +89,15 @@ local function init()
 			end)
 
 			Icon.Parent = List
+			Query += 1
 		end)()
 	end
+	
+	coroutine.wrap(function()
+		Widget.Title = "Feather icons picker — Loading icons"
+		repeat wait() until Query == #Icons
+		Widget.Title = "Feather icons picker"
+	end)()
 	
 	Search.Focused:Connect(function()
 		Search.Parent.Parent.Background.BackgroundColor3 = Stylesheet.PrimaryColor3
@@ -108,7 +118,9 @@ local function init()
 			for i,v in pairs(match:match(text)) do
 				List:FindFirstChild(v).Visible = true
 			end
+			Widget.Title = "Feather icons picker — Search result for \"" .. text .. "\""
 		else
+			Widget.Title = "Feather icons picker"
 			for i,v in pairs(List:GetChildren()) do
 				if v:IsA("Frame") then
 					v.Visible = true
