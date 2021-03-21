@@ -12,8 +12,8 @@ local WidgetInfo = DockWidgetPluginGuiInfo.new(
 	200,
 	300
 )
-local Widget = plugin:CreateDockWidgetPluginGui("Feathers", WidgetInfo)
-local Toolbar = plugin:CreateToolbar("Feather icons")
+local Widget = plugin:CreateDockWidgetPluginGui("Feathers Preview", WidgetInfo)
+local Toolbar = plugin:CreateToolbar("Feather icons (Preview)")
 local Trigger = Toolbar:CreateButton("Toggle Window", "Toggles the icon picker window", "rbxassetid://6521417285")
 local matchObject = {}
 local UI
@@ -50,11 +50,10 @@ local function init()
 	applyTheme()
 	for i,v in pairs(Icons) do
 		coroutine.wrap(function()
-			local Info = MarketplaceService:GetProductInfo(tonumber(table.pack(string.gsub(v, "http://www.roblox.com/asset/%?id=", ""))[1]), Enum.InfoType.Asset)
 			local Icon = script.Icon:Clone()
-			Icon.Name = string.gsub(Info.Name, "Images/", "")
-			matchObject[#matchObject + 1] = Icon.Name
-			Icon.Container.Image.Image = v
+			Icon.Name = v[2]
+			matchObject[#matchObject + 1] = v[2]
+			Icon.Container.Image.Image = v[1]
 			
 			Icon.Trigger.MouseEnter:Connect(function()
 				Icon.Background.BackgroundColor3 = Stylesheet.PrimaryColor3
