@@ -16,7 +16,9 @@ local Widget = plugin:CreateDockWidgetPluginGui("Feathers", WidgetInfo)
 local Toolbar = plugin:CreateToolbar("Feather icons")
 local Trigger = Toolbar:CreateButton("Toggle Window", "Toggles the icon picker window", "rbxassetid://6521417285")
 local matchObject = {}
+
 local UI
+local Warn, Success
 local Search
 local List
 
@@ -44,6 +46,7 @@ local function applyTheme()
 end
 
 local function init()
+	Warn, Success = script.Warn:Clone(), script.Success:Clone()
 	UI = script.Parent.UI:Clone()
 	Search = UI.Search.Container.TextBox
 	List = UI.List
@@ -64,6 +67,8 @@ local function init()
 			end)
 
 			Icon.Trigger.MouseButton1Up:Connect(function()
+				Success.Container.Title.Text = ""
+				Warn.Visible, Success.Visible = false, false
 				local object = Selection:Get()[1] 
 				if object then
 					local copy = Icon.Container.Image:Clone()
@@ -72,8 +77,11 @@ local function init()
 					copy.Position = UDim2.new(0, 0, 0, 0)
 					copy.AnchorPoint = Vector2.new(0, 0)
 					copy.Parent = object
+					--Success.Container.Title.Text = "Successfully inserted icon <b>" .. Icon.Name .. "</b>!" 
+					--Success.Visible = true
 				else
-					warn("please select an object before putting an icon.")
+					--Warn.Visible = true
+					warn("Please select an object before inserting icon " .. Icon.Name .. "!")
 				end
 			end)
 
@@ -122,11 +130,13 @@ local function init()
 		Trigger:SetActive(Widget.Enabled)
 	end)
 	
+	Widget.Name = "Feather4Roblox"
 	Widget.Title = "Feather icons picker"
 	Trigger.ClickableWhenViewportHidden = true
 	Widget.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	Widget.ResetOnSpawn = false
 	UI.Parent = Widget
+	Warn.Parent, Success.Parent = Widget, Widget
 end
 
 init()
