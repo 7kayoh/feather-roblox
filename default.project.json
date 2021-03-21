@@ -2,11 +2,10 @@
   "name": "feather-roblox",
   "tree": {
     "$className": "DataModel",
-
     "ReplicatedStorage": {
-      "Common": {
+      "Commodefault.project.jsonn": {
         "$path": "src/shared"
       }
-    },
-  },
+    }
+  }
 }
