@@ -73,7 +73,7 @@ local function init()
 				Success.Container.Title.Text = ""
 				Warn.Visible, Success.Visible = false, false
 				local object = Selection:Get()[1] 
-				if object then
+				if object and not object.Image then
 					local copy = Icon.Container.Image:Clone()
 					copy.Name = Icon.Name
 					copy.Size = UDim2.new(1, 0, 1, 0)
@@ -82,6 +82,8 @@ local function init()
 					copy.Parent = object
 					--Success.Container.Title.Text = "Successfully inserted icon <b>" .. Icon.Name .. "</b>!" 
 					--Success.Visible = true
+				elseif object:IsA("ImageLabel") or object:IsA("ImageButton") then
+					object.Image = Icon.Container.Image.Image
 				else
 					--Warn.Visible = true
 					warn("Please select an object before inserting icon " .. Icon.Name .. "!")
@@ -95,7 +97,7 @@ local function init()
 	
 	coroutine.wrap(function()
 		Widget.Title = "Feather icons picker — Loading icons"
-		repeat wait() until Query == #Icons
+		repeat Widget.Title = "Feather icons picker — Loaded " .. Query .. " out of " .. #Icons .. " icons" wait() until Query == #Icons
 		Widget.Title = "Feather icons picker"
 	end)()
 	
