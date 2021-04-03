@@ -73,17 +73,19 @@ local function init()
 				Success.Container.Title.Text = ""
 				Warn.Visible, Success.Visible = false, false
 				local object = Selection:Get()[1] 
-				if object and not object.Image then
-					local copy = Icon.Container.Image:Clone()
-					copy.Name = Icon.Name
-					copy.Size = UDim2.new(1, 0, 1, 0)
-					copy.Position = UDim2.new(0, 0, 0, 0)
-					copy.AnchorPoint = Vector2.new(0, 0)
-					copy.Parent = object
+				if object then
+					if object:IsA("ImageLabel") or object:IsA("ImageButton") then
+						object.Image = Icon.Container.Image.Image
+					else
+						local copy = Icon.Container.Image:Clone()
+						copy.Name = Icon.Name
+						copy.Size = UDim2.new(1, 0, 1, 0)
+						copy.Position = UDim2.new(0, 0, 0, 0)
+						copy.AnchorPoint = Vector2.new(0, 0)
+						copy.Parent = object
+					end
 					--Success.Container.Title.Text = "Successfully inserted icon <b>" .. Icon.Name .. "</b>!" 
 					--Success.Visible = true
-				elseif object:IsA("ImageLabel") or object:IsA("ImageButton") then
-					object.Image = Icon.Container.Image.Image
 				else
 					--Warn.Visible = true
 					warn("Please select an object before inserting icon " .. Icon.Name .. "!")
