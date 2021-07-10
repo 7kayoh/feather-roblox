@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="ScrollingFrame" referent="RBXb69b82492a794bd289c66e7e4db35dca">
+	<Item class="Frame" referent="RBX9f4157fa38c543979125a3000f134b84">
 		<Properties>
 			<bool name="Active">false</bool>
 			<Vector2 name="AnchorPoint">
@@ -11,12 +11,11 @@
 			</Vector2>
 			<BinaryString name="AttributesSerialize"></BinaryString>
 			<bool name="AutoLocalize">true</bool>
-			<token name="AutomaticCanvasSize">0</token>
 			<token name="AutomaticSize">0</token>
 			<Color3 name="BackgroundColor3">
-				<R>0.113725498</R>
-				<G>0.113725498</G>
-				<B>0.113725498</B>
+				<R>0.113725491</R>
+				<G>0.113725491</G>
+				<B>0.113725491</B>
 			</Color3>
 			<float name="BackgroundTransparency">0</float>
 			<Color3 name="BorderColor3">
@@ -26,23 +25,9 @@
 			</Color3>
 			<token name="BorderMode">0</token>
 			<int name="BorderSizePixel">0</int>
-			<Content name="BottomImage"><url>rbxasset://textures/ui/Scroll/scroll-bottom.png</url></Content>
-			<Vector2 name="CanvasPosition">
-				<X>0</X>
-				<Y>0</Y>
-			</Vector2>
-			<UDim2 name="CanvasSize">
-				<XS>0</XS>
-				<XO>0</XO>
-				<YS>2</YS>
-				<YO>0</YO>
-			</UDim2>
 			<bool name="ClipsDescendants">false</bool>
 			<bool name="Draggable">false</bool>
-			<token name="ElasticBehavior">0</token>
-			<token name="HorizontalScrollBarInset">0</token>
 			<int name="LayoutOrder">0</int>
-			<Content name="MidImage"><url>rbxasset://textures/ui/Scroll/scroll-middle.png</url></Content>
 			<string name="Name">UI</string>
 			<Ref name="NextSelectionDown">null</Ref>
 			<Ref name="NextSelectionLeft">null</Ref>
@@ -56,15 +41,6 @@
 			</UDim2>
 			<Ref name="RootLocalizationTable">null</Ref>
 			<float name="Rotation">0</float>
-			<Color3 name="ScrollBarImageColor3">
-				<R>1</R>
-				<G>1</G>
-				<B>1</B>
-			</Color3>
-			<float name="ScrollBarImageTransparency">0.699999988</float>
-			<int name="ScrollBarThickness">4</int>
-			<token name="ScrollingDirection">4</token>
-			<bool name="ScrollingEnabled">true</bool>
 			<bool name="Selectable">false</bool>
 			<Ref name="SelectionImageObject">null</Ref>
 			<UDim2 name="Size">
@@ -75,10 +51,8 @@
 			</UDim2>
 			<token name="SizeConstraint">0</token>
 			<int64 name="SourceAssetId">-1</int64>
+			<token name="Style">0</token>
 			<BinaryString name="Tags"></BinaryString>
-			<Content name="TopImage"><url>rbxasset://textures/ui/Scroll/scroll-top.png</url></Content>
-			<token name="VerticalScrollBarInset">0</token>
-			<token name="VerticalScrollBarPosition">0</token>
 			<bool name="Visible">true</bool>
 			<int name="ZIndex">1</int>
 		</Properties>
@@ -134,7 +108,7 @@
 				<token name="Style">0</token>
 				<BinaryString name="Tags"></BinaryString>
 				<bool name="Visible">true</bool>
-				<int name="ZIndex">1</int>
+				<int name="ZIndex">2</int>
 			</Properties>
 			<Item class="Frame" referent="RBXf2e05ab229ed46108cf9e32f43838c66">
 				<Properties>
@@ -412,16 +386,88 @@
 					</Properties>
 				</Item>
 			</Item>
+			<Item class="Frame" referent="RBX7ca008aa5a4349bc95a1a5592a8f2fa3">
+				<Properties>
+					<bool name="Active">false</bool>
+					<Vector2 name="AnchorPoint">
+						<X>0</X>
+						<Y>0</Y>
+					</Vector2>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<bool name="AutoLocalize">true</bool>
+					<token name="AutomaticSize">0</token>
+					<Color3 name="BackgroundColor3">
+						<R>0.113725491</R>
+						<G>0.113725491</G>
+						<B>0.113725491</B>
+					</Color3>
+					<float name="BackgroundTransparency">0</float>
+					<Color3 name="BorderColor3">
+						<R>0.105882362</R>
+						<G>0.164705887</G>
+						<B>0.207843155</B>
+					</Color3>
+					<token name="BorderMode">0</token>
+					<int name="BorderSizePixel">0</int>
+					<bool name="ClipsDescendants">false</bool>
+					<bool name="Draggable">false</bool>
+					<int name="LayoutOrder">0</int>
+					<string name="Name">Gradient</string>
+					<Ref name="NextSelectionDown">null</Ref>
+					<Ref name="NextSelectionLeft">null</Ref>
+					<Ref name="NextSelectionRight">null</Ref>
+					<Ref name="NextSelectionUp">null</Ref>
+					<UDim2 name="Position">
+						<XS>0</XS>
+						<XO>-24</XO>
+						<YS>0</YS>
+						<YO>-24</YO>
+					</UDim2>
+					<Ref name="RootLocalizationTable">null</Ref>
+					<float name="Rotation">0</float>
+					<bool name="Selectable">false</bool>
+					<Ref name="SelectionImageObject">null</Ref>
+					<UDim2 name="Size">
+						<XS>1</XS>
+						<XO>48</XO>
+						<YS>1</YS>
+						<YO>48</YO>
+					</UDim2>
+					<token name="SizeConstraint">0</token>
+					<int64 name="SourceAssetId">-1</int64>
+					<token name="Style">0</token>
+					<BinaryString name="Tags"></BinaryString>
+					<bool name="Visible">true</bool>
+					<int name="ZIndex">0</int>
+				</Properties>
+				<Item class="UIGradient" referent="RBX65829748c37947dca45b1add8c77e8cc">
+					<Properties>
+						<BinaryString name="AttributesSerialize"></BinaryString>
+						<ColorSequence name="Color">0 1 1 1 0 1 1 1 1 0 </ColorSequence>
+						<bool name="Enabled">true</bool>
+						<string name="Name">UIGradient</string>
+						<Vector2 name="Offset">
+							<X>0</X>
+							<Y>0</Y>
+						</Vector2>
+						<float name="Rotation">90</float>
+						<int64 name="SourceAssetId">-1</int64>
+						<BinaryString name="Tags"></BinaryString>
+						<NumberSequence name="Transparency">0 0 0 0.503484 0.25625 0 0.815331 0.6375 0 0.951219 1 0 1 1 0 </NumberSequence>
+					</Properties>
+				</Item>
+			</Item>
 		</Item>
-		<Item class="Frame" referent="RBX3899d7a201b64de18efeed3788b17b2f">
+		<Item class="ScrollingFrame" referent="RBXad6c83a690574656be2f68559821b442">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
-					<X>0.5</X>
+					<X>0</X>
 					<Y>1</Y>
 				</Vector2>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<bool name="AutoLocalize">true</bool>
+				<token name="AutomaticCanvasSize">0</token>
 				<token name="AutomaticSize">0</token>
 				<Color3 name="BackgroundColor3">
 					<R>1</R>
@@ -436,34 +482,59 @@
 				</Color3>
 				<token name="BorderMode">0</token>
 				<int name="BorderSizePixel">0</int>
+				<Content name="BottomImage"><url>rbxassetid://6889812791</url></Content>
+				<Vector2 name="CanvasPosition">
+					<X>0</X>
+					<Y>0</Y>
+				</Vector2>
+				<UDim2 name="CanvasSize">
+					<XS>0</XS>
+					<XO>0</XO>
+					<YS>0</YS>
+					<YO>0</YO>
+				</UDim2>
 				<bool name="ClipsDescendants">false</bool>
 				<bool name="Draggable">false</bool>
+				<token name="ElasticBehavior">0</token>
+				<token name="HorizontalScrollBarInset">0</token>
 				<int name="LayoutOrder">0</int>
+				<Content name="MidImage"><url>rbxassetid://6889812721</url></Content>
 				<string name="Name">List</string>
 				<Ref name="NextSelectionDown">null</Ref>
 				<Ref name="NextSelectionLeft">null</Ref>
 				<Ref name="NextSelectionRight">null</Ref>
 				<Ref name="NextSelectionUp">null</Ref>
 				<UDim2 name="Position">
-					<XS>0.5</XS>
-					<XO>0</XO>
+					<XS>0</XS>
+					<XO>24</XO>
 					<YS>1</YS>
 					<YO>0</YO>
 				</UDim2>
 				<Ref name="RootLocalizationTable">null</Ref>
 				<float name="Rotation">0</float>
+				<Color3 name="ScrollBarImageColor3">
+					<R>0.172549024</R>
+					<G>0.172549024</G>
+					<B>0.172549024</B>
+				</Color3>
+				<float name="ScrollBarImageTransparency">0</float>
+				<int name="ScrollBarThickness">6</int>
+				<token name="ScrollingDirection">4</token>
+				<bool name="ScrollingEnabled">true</bool>
 				<bool name="Selectable">false</bool>
 				<Ref name="SelectionImageObject">null</Ref>
 				<UDim2 name="Size">
 					<XS>1</XS>
-					<XO>-48</XO>
+					<XO>-24</XO>
 					<YS>1</YS>
 					<YO>-90</YO>
 				</UDim2>
 				<token name="SizeConstraint">0</token>
 				<int64 name="SourceAssetId">-1</int64>
-				<token name="Style">0</token>
 				<BinaryString name="Tags"></BinaryString>
+				<Content name="TopImage"><url>rbxassetid://6889812604</url></Content>
+				<token name="VerticalScrollBarInset">0</token>
+				<token name="VerticalScrollBarPosition">0</token>
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
@@ -477,10 +548,10 @@
 						<YO>24</YO>
 					</UDim2>
 					<UDim2 name="CellSize">
-						<XS>0</XS>
-						<XO>60</XO>
+						<XS>1</XS>
+						<XO>-24</XO>
 						<YS>0</YS>
-						<YO>60</YO>
+						<YO>48</YO>
 					</UDim2>
 					<token name="FillDirection">0</token>
 					<int name="FillDirectionMaxCells">0</int>
@@ -491,6 +562,73 @@
 					<token name="StartCorner">0</token>
 					<BinaryString name="Tags"></BinaryString>
 					<token name="VerticalAlignment">1</token>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="Frame" referent="RBXce83a290b6c34410845d7432c9e8a1af">
+			<Properties>
+				<bool name="Active">false</bool>
+				<Vector2 name="AnchorPoint">
+					<X>1</X>
+					<Y>1</Y>
+				</Vector2>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<bool name="AutoLocalize">true</bool>
+				<token name="AutomaticSize">0</token>
+				<Color3 name="BackgroundColor3">
+					<R>0.0901960805</R>
+					<G>0.0901960805</G>
+					<B>0.0901960805</B>
+				</Color3>
+				<float name="BackgroundTransparency">0</float>
+				<Color3 name="BorderColor3">
+					<R>0.105882362</R>
+					<G>0.164705887</G>
+					<B>0.207843155</B>
+				</Color3>
+				<token name="BorderMode">0</token>
+				<int name="BorderSizePixel">0</int>
+				<bool name="ClipsDescendants">false</bool>
+				<bool name="Draggable">false</bool>
+				<int name="LayoutOrder">0</int>
+				<string name="Name">ScrollerBackground</string>
+				<Ref name="NextSelectionDown">null</Ref>
+				<Ref name="NextSelectionLeft">null</Ref>
+				<Ref name="NextSelectionRight">null</Ref>
+				<Ref name="NextSelectionUp">null</Ref>
+				<UDim2 name="Position">
+					<XS>1</XS>
+					<XO>0</XO>
+					<YS>1</YS>
+					<YO>0</YO>
+				</UDim2>
+				<Ref name="RootLocalizationTable">null</Ref>
+				<float name="Rotation">0</float>
+				<bool name="Selectable">false</bool>
+				<Ref name="SelectionImageObject">null</Ref>
+				<UDim2 name="Size">
+					<XS>0</XS>
+					<XO>6</XO>
+					<YS>1</YS>
+					<YO>-90</YO>
+				</UDim2>
+				<token name="SizeConstraint">0</token>
+				<int64 name="SourceAssetId">-1</int64>
+				<token name="Style">0</token>
+				<BinaryString name="Tags"></BinaryString>
+				<bool name="Visible">false</bool>
+				<int name="ZIndex">0</int>
+			</Properties>
+			<Item class="UICorner" referent="RBX8484ccfb55644f5a87ac3b41f48b4aab">
+				<Properties>
+					<BinaryString name="AttributesSerialize"></BinaryString>
+					<UDim name="CornerRadius">
+						<S>1</S>
+						<O>0</O>
+					</UDim>
+					<string name="Name">UICorner</string>
+					<int64 name="SourceAssetId">-1</int64>
+					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
 		</Item>

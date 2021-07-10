@@ -1,23 +1,10 @@
-<div align="center">
+# Feather For Roblox
 
-![Banner|690x184](https://doy2mn9upadnk.cloudfront.net/uploads/default/original/4X/3/7/5/37504549b9a0c08a05e95f8d6a737119bb7d5f23.png) 
-<hr>
-<h1>Feather Icons</h1>
-<p>For Roblox!</p>
-<br>
-<a href="https://www.roblox.com/library/6521598582/Feather-icons">Download</a> | <a href="https://github.com/va1kio/feather-roblox">Repository</a>
-<hr>
+Simply beautiful open source icons.
 
-Heyo, I've made a plugin so you can insert the beautifully-crafted icons made by Feather. They've went thru a pixelfix process, as well as exported in 512*512.
+This is a Roblox port of the open sourced Feather Icons with slight modifications to fit Roblox's moderation guidelines, here's what changed:
 
-The plugin includes a search feature, which can be helpful if you want to find a specific icon without scrolling around.
-
-<h2> Credits</h2>
-
-[https://feathericons.com/](https://feathericons.com/)
-[matcher.lua](https://github.com/rgieseke/textredux/blob/master/util/matcher.lua)
-
-<h2>Notes</h2>
-Rojo support is included in the repository.
-
-</div>
+- Social media icons are not available, this includes: twitter, twitch, facebook, instagram
+- zap, zap-off has been renamed to electricity and electricity-off respectively
+- disc has been renmaed to diskette
+- creditcard is removed

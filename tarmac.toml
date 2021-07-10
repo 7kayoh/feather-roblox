@@ -1,0 +1,9 @@
+name = "feather-blox"
+upload-to-group-id = 11428289
+
+# Most projects will define some 'inputs'.
+# This tells Tarmac where to find assets that we'll use in our game.
+[[inputs]]
+glob = "icons/*.png"
+codegen = true
+codegen-path = "src/modules/util/icons.lua"
