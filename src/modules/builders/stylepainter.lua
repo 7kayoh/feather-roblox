@@ -12,6 +12,7 @@ return function(PluginService, assets, modules, widget)
     local function applyColors()
         local themeOption = settings().Studio.Theme
         local themeStylesheet = stylesheet[themeOption.Name]
+        widget.UI.BackgroundColor3 = themeStylesheet.Background
         widget.UI.Search.Background.BackgroundColor3 = themeStylesheet.Accent
         widget.UI.Search.Background.Cover.BackgroundColor3 = themeStylesheet.Elevated
         widget.UI.Search.Gradient.BackgroundColor3 = themeStylesheet.Background
@@ -24,7 +25,7 @@ return function(PluginService, assets, modules, widget)
         applyColorsToIcon(themeStylesheet, assets.Icon)
         for _, object in ipairs(widget.UI.List:GetChildren()) do
             if object:IsA("Frame") then
-                applyColorsToIcon(object)
+                applyColorsToIcon(themeStylesheet, object)
             end
         end
     end
