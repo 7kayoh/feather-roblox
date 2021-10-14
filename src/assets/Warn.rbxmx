@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Frame" referent="RBX8031320bf8b6469ea57e1c95b61ec7af">
+	<Item class="Frame" referent="37">
 		<Properties>
 			<bool name="Active">false</bool>
 			<Vector2 name="AnchorPoint">
@@ -56,7 +56,7 @@
 			<bool name="Visible">false</bool>
 			<int name="ZIndex">1</int>
 		</Properties>
-		<Item class="Frame" referent="RBX540f87b0ce624c69bfbd4f406143dd22">
+		<Item class="Frame" referent="38">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -110,7 +110,7 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
-			<Item class="Frame" referent="RBXe882fb0cf53a4e888ea7d2662e7a9bc1">
+			<Item class="Frame" referent="39">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -164,7 +164,7 @@
 					<bool name="Visible">true</bool>
 					<int name="ZIndex">1</int>
 				</Properties>
-				<Item class="UICorner" referent="RBXac7a1b8a725c4dd1866a74da209b8e1b">
+				<Item class="UICorner" referent="40">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<UDim name="CornerRadius">
@@ -177,7 +177,7 @@
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="UICorner" referent="RBXb2b1df9b492e45e98377c5a7dbbd902d">
+			<Item class="UICorner" referent="41">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<UDim name="CornerRadius">
@@ -190,7 +190,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Frame" referent="RBXe7f9e0901dad47d1843bdb100060e635">
+		<Item class="Frame" referent="42">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -244,7 +244,7 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">2</int>
 			</Properties>
-			<Item class="ImageLabel" referent="RBX8559be85947546f58cf0f0bfe1925e60">
+			<Item class="ImageLabel" referent="43">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -296,6 +296,7 @@
 						<YS>0.5</YS>
 						<YO>0</YO>
 					</UDim2>
+					<token name="ResampleMode">0</token>
 					<Ref name="RootLocalizationTable">null</Ref>
 					<float name="Rotation">0</float>
 					<token name="ScaleType">3</token>
@@ -330,7 +331,7 @@
 					<bool name="Visible">true</bool>
 					<int name="ZIndex">1</int>
 				</Properties>
-				<Item class="UIAspectRatioConstraint" referent="RBX277fe83599d64d469ca6c40185ab61df">
+				<Item class="UIAspectRatioConstraint" referent="44">
 					<Properties>
 						<float name="AspectRatio">1</float>
 						<token name="AspectType">0</token>
@@ -342,7 +343,7 @@
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="TextLabel" referent="RBX5faf9c229a7b4097878fffcb6d121f03">
+			<Item class="TextLabel" referent="45">
 				<Properties>
 					<bool name="Active">true</bool>
 					<Vector2 name="AnchorPoint">

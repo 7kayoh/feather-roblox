@@ -182,7 +182,7 @@
                 </BinaryString>
                 <UDim name="CornerRadius">
                   <S>0</S>
-                  <O>3</O>
+                  <O>9</O>
                 </UDim>
                 <int name="SourceAssetId">-1</int>
                 <BinaryString name="Tags">
@@ -197,7 +197,7 @@
               </BinaryString>
               <UDim name="CornerRadius">
                 <S>0</S>
-                <O>4</O>
+                <O>10</O>
               </UDim>
               <int name="SourceAssetId">-1</int>
               <BinaryString name="Tags">
@@ -316,6 +316,7 @@
                 <YS>0.5</YS>
                 <YO>0</YO>
               </UDim2>
+              <token name="ResampleMode">0</token>
               <Ref name="RootLocalizationTable">null</Ref>
               <float name="Rotation">0</float>
               <token name="ScaleType">3</token>
@@ -882,6 +883,7 @@
                 <YS>0.5</YS>
                 <YO>0</YO>
               </UDim2>
+              <token name="ResampleMode">0</token>
               <Ref name="RootLocalizationTable">null</Ref>
               <float name="Rotation">0</float>
               <token name="ScaleType">3</token>
@@ -1243,7 +1245,7 @@
                   </BinaryString>
                   <UDim name="CornerRadius">
                     <S>0</S>
-                    <O>3</O>
+                    <O>9</O>
                   </UDim>
                   <int name="SourceAssetId">-1</int>
                   <BinaryString name="Tags">
@@ -1258,7 +1260,7 @@
                 </BinaryString>
                 <UDim name="CornerRadius">
                   <S>0</S>
-                  <O>4</O>
+                  <O>10</O>
                 </UDim>
                 <int name="SourceAssetId">-1</int>
                 <BinaryString name="Tags">
@@ -1585,7 +1587,7 @@
                 <XS>0</XS>
                 <XO>24</XO>
                 <YS>0</YS>
-                <YO>24</YO>
+                <YO>12</YO>
               </UDim2>
               <UDim2 name="CellSize">
                 <XS>1</XS>
@@ -1986,6 +1988,7 @@
                 <YS>0.5</YS>
                 <YO>0</YO>
               </UDim2>
+              <token name="ResampleMode">0</token>
               <Ref name="RootLocalizationTable">null</Ref>
               <float name="Rotation">0</float>
               <token name="ScaleType">3</token>
@@ -2268,6 +2271,7 @@ end</string>
     local function applyColors()
         local themeOption = settings().Studio.Theme
         local themeStylesheet = stylesheet[themeOption.Name]
+        widget.UI.BackgroundColor3 = themeStylesheet.Background
         widget.UI.Search.Background.BackgroundColor3 = themeStylesheet.Accent
         widget.UI.Search.Background.Cover.BackgroundColor3 = themeStylesheet.Elevated
         widget.UI.Search.Gradient.BackgroundColor3 = themeStylesheet.Background
@@ -2280,7 +2284,7 @@ end</string>
         applyColorsToIcon(themeStylesheet, assets.Icon)
         for _, object in ipairs(widget.UI.List:GetChildren()) do
             if object:IsA("Frame") then
-                applyColorsToIcon(object)
+                applyColorsToIcon(themeStylesheet, object)
             end
         end
     end

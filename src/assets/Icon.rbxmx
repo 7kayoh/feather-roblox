@@ -169,7 +169,7 @@
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<UDim name="CornerRadius">
 							<S>0</S>
-							<O>3</O>
+							<O>9</O>
 						</UDim>
 						<string name="Name">UICorner</string>
 						<int64 name="SourceAssetId">-1</int64>
@@ -182,7 +182,7 @@
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<UDim name="CornerRadius">
 						<S>0</S>
-						<O>4</O>
+						<O>10</O>
 					</UDim>
 					<string name="Name">UICorner</string>
 					<int64 name="SourceAssetId">-1</int64>
@@ -296,6 +296,7 @@
 						<YS>0.5</YS>
 						<YO>0</YO>
 					</UDim2>
+					<token name="ResampleMode">0</token>
 					<Ref name="RootLocalizationTable">null</Ref>
 					<float name="Rotation">0</float>
 					<token name="ScaleType">3</token>

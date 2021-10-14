@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="Frame" referent="RBX9f4157fa38c543979125a3000f134b84">
+	<Item class="Frame" referent="23">
 		<Properties>
 			<bool name="Active">false</bool>
 			<Vector2 name="AnchorPoint">
@@ -56,7 +56,7 @@
 			<bool name="Visible">true</bool>
 			<int name="ZIndex">1</int>
 		</Properties>
-		<Item class="Frame" referent="RBX92a8d94c5b4f4e13974a621d510058c1">
+		<Item class="Frame" referent="24">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -110,7 +110,7 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">2</int>
 			</Properties>
-			<Item class="Frame" referent="RBXf2e05ab229ed46108cf9e32f43838c66">
+			<Item class="Frame" referent="25">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -164,7 +164,7 @@
 					<bool name="Visible">true</bool>
 					<int name="ZIndex">1</int>
 				</Properties>
-				<Item class="Frame" referent="RBX54a9205217b54646b64bff01ae400aee">
+				<Item class="Frame" referent="26">
 					<Properties>
 						<bool name="Active">false</bool>
 						<Vector2 name="AnchorPoint">
@@ -218,12 +218,12 @@
 						<bool name="Visible">true</bool>
 						<int name="ZIndex">1</int>
 					</Properties>
-					<Item class="UICorner" referent="RBX2bd558b7257e4a06ba15c06f12804ed3">
+					<Item class="UICorner" referent="27">
 						<Properties>
 							<BinaryString name="AttributesSerialize"></BinaryString>
 							<UDim name="CornerRadius">
 								<S>0</S>
-								<O>3</O>
+								<O>9</O>
 							</UDim>
 							<string name="Name">UICorner</string>
 							<int64 name="SourceAssetId">-1</int64>
@@ -231,12 +231,12 @@
 						</Properties>
 					</Item>
 				</Item>
-				<Item class="UICorner" referent="RBX1b253ff6406f4d19aff1657d20c5e383">
+				<Item class="UICorner" referent="28">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<UDim name="CornerRadius">
 							<S>0</S>
-							<O>4</O>
+							<O>10</O>
 						</UDim>
 						<string name="Name">UICorner</string>
 						<int64 name="SourceAssetId">-1</int64>
@@ -244,7 +244,7 @@
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Frame" referent="RBX82c2786f8e6447d280511b77658e7433">
+			<Item class="Frame" referent="29">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -298,7 +298,7 @@
 					<bool name="Visible">true</bool>
 					<int name="ZIndex">2</int>
 				</Properties>
-				<Item class="TextBox" referent="RBX86500ca988f9406dbd36b89eb1dc7a15">
+				<Item class="TextBox" referent="30">
 					<Properties>
 						<bool name="Active">true</bool>
 						<Vector2 name="AnchorPoint">
@@ -386,7 +386,7 @@
 					</Properties>
 				</Item>
 			</Item>
-			<Item class="Frame" referent="RBX7ca008aa5a4349bc95a1a5592a8f2fa3">
+			<Item class="Frame" referent="31">
 				<Properties>
 					<bool name="Active">false</bool>
 					<Vector2 name="AnchorPoint">
@@ -440,7 +440,7 @@
 					<bool name="Visible">true</bool>
 					<int name="ZIndex">0</int>
 				</Properties>
-				<Item class="UIGradient" referent="RBX65829748c37947dca45b1add8c77e8cc">
+				<Item class="UIGradient" referent="32">
 					<Properties>
 						<BinaryString name="AttributesSerialize"></BinaryString>
 						<ColorSequence name="Color">0 1 1 1 0 1 1 1 1 0 </ColorSequence>
@@ -458,7 +458,7 @@
 				</Item>
 			</Item>
 		</Item>
-		<Item class="ScrollingFrame" referent="RBXad6c83a690574656be2f68559821b442">
+		<Item class="ScrollingFrame" referent="33">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -538,14 +538,14 @@
 				<bool name="Visible">true</bool>
 				<int name="ZIndex">1</int>
 			</Properties>
-			<Item class="UIGridLayout" referent="RBXff2b72eedc514900b7d4be8e7d8f9c62">
+			<Item class="UIGridLayout" referent="34">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<UDim2 name="CellPadding">
 						<XS>0</XS>
 						<XO>24</XO>
 						<YS>0</YS>
-						<YO>24</YO>
+						<YO>12</YO>
 					</UDim2>
 					<UDim2 name="CellSize">
 						<XS>1</XS>
@@ -565,7 +565,7 @@
 				</Properties>
 			</Item>
 		</Item>
-		<Item class="Frame" referent="RBXce83a290b6c34410845d7432c9e8a1af">
+		<Item class="Frame" referent="35">
 			<Properties>
 				<bool name="Active">false</bool>
 				<Vector2 name="AnchorPoint">
@@ -619,7 +619,7 @@
 				<bool name="Visible">false</bool>
 				<int name="ZIndex">0</int>
 			</Properties>
-			<Item class="UICorner" referent="RBX8484ccfb55644f5a87ac3b41f48b4aab">
+			<Item class="UICorner" referent="36">
 				<Properties>
 					<BinaryString name="AttributesSerialize"></BinaryString>
 					<UDim name="CornerRadius">
