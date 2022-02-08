@@ -1,3 +1,5 @@
+:warning: At branch V3, WIP and not working at the moment
+
 # Feather For Roblox
 
 Simply beautiful open source icons.

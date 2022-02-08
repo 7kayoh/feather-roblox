@@ -1,0 +1,13 @@
+{
+  "name": "feather",
+  "tree": {
+    "Feather": {
+      "$className": "Folder",
+      "$path": "Source",
+
+      "Packages": {
+        "$path": "Packages"
+      }
+    }
+  }
+}
