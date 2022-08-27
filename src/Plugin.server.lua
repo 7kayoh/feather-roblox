@@ -16,7 +16,7 @@ local function init()
     widget.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     local component = storybook(widget)
 
-    local widgetToolbar = plugin:CreateToolbar("Lucide Icons")
+    local widgetToolbar = plugin:CreateToolbar("Feather Icons")
     local widgetAction = plugin:CreatePluginAction("toggleFeather-v2", "Feather Icon Picker", "Toggles the icon picker", "rbxassetid://7073055533", true)
     local widgetTrigger = widgetToolbar:CreateButton("toggleFeather-v2", "Shows/hides the icon picker", "rbxassetid://7073055533", "Picker")
     widgetTrigger.ClickableWhenViewportHidden = true
