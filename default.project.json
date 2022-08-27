@@ -1,6 +1,9 @@
 {
-  "name": "feather-roblox",
+  "name": "featherv2",
   "tree": {
-    "$path": "src"
+    "$path": "src",
+    "Packages": {
+      "$path": "Packages"
+    }
   }
 }
